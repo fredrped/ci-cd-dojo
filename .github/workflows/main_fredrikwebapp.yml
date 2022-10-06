@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: cicdfpeder.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_f8ab20aafa514fa4a05048bda21e6e5d }}/mydemoapp:${{ github.sha }}
-        file: ./BlazorApp1/Server/Dockerfile
+        file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
